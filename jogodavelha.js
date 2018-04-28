@@ -9,32 +9,49 @@ jvapp.controller('jvControl',['$scope', function($scope){
     var temp;
   
        
-    var bt1;
-    var bt2;
-    var bt3;
-    var bt4;
-    var bt5;
-    var bt6;
-    var bt7;
-    var bt8;
-    var bt9;
+    var bt1 = 1;
+    var bt2 = 2;
+    var bt3 = 3;
+    var bt4 = 4;
+    var bt5 = 5;
+    var bt6 = 6;
+    var bt7 = 7;
+    var bt8 = 8;
+    var bt9 = 9;
 
-    $scope.clicktest = function(clickEvent){
-      //linhas  
-        if( bt1 = bt2 = bt3){alert(bt1 + ' ganhou'); console.log('linha1')};
-        if (bt4 = bt5 = bt6){alert(bt5 + ' ganhou'); console.log('linha2')};
-        if (bt7 = bt8 = bt9){alert(bt7 + '  ganhou'); console.log('linha3')};
-    // contraBarra
-        if (bt1 = bt5 = bt9){ alert(bt5 + '  ganhou');console.log('contrabarra')};
-        // barra
-        if (bt7 = bt5 = bt3){alert(bt3 + '  ganhou'); console.log('barra')};
-
-    // colunas
-        if(bt1 = bt4 = bt7){alert(bt1 + '  ganhou'); console.log('coluna1')};
-        if(bt2 = bt5 = bt8){alert(bt8 + '   ganhou'); console.log('coluna2')};
-        if(bt3 = bt6 = bt9){alert(bt9 + '   ganhou'); console.log('coluna3')};
-           
+     $scope.clicktest = function(clickEvent){
+         console.log(bt1, bt2, bt3, bt4, bt5 ,bt6 , bt7, bt8 ,bt9);
+             //linhas  
+             if( bt1 == bt2 && bt3 && !null){
+                alert(bt1 + ' ganhou');
+                
+                console.log('linha1')
+            };
+            if (bt4 == bt5 && bt6 && !null){
+                alert(bt4 + ' ganhou');
+                console.log('linha2')
+            };
+            if (bt7 == bt8 && bt9 && !null){
+                alert(bt7 + ' ganhou'); 
+                console.log('linha3')
+            };
+            
+            
+        // contraBarra
+            if (bt1 == bt5 && bt9){ alert(bt5 + '  ganhou');console.log('contrabarra')};
+            // barra
+            if (bt7 == bt5 && bt3){alert(bt3 + '  ganhou'); console.log('barra')};
+    
+        // colunas
+            if(bt1 == bt4 && bt7){alert(bt1 + '  ganhou'); console.log('coluna1')};
+            if(bt2 == bt5 && bt8){alert(bt8 + '   ganhou'); console.log('coluna2')};
+            if(bt3 == bt6 && bt9 && !null){alert(bt9 + '   ganhou'); console.log('coluna3')};
+          
+  
+          
     };
+
+    
 
 
     $scope.showID = function(event){
@@ -70,13 +87,7 @@ jvapp.controller('jvControl',['$scope', function($scope){
                         bt7 = jv.b7b;
                         bt8 = jv.b8b;
                         bt9 = jv.b9b;
-
-       console.log('bt1 :' + bt1);
-       console.log('bt2 : '+ bt2);
-       console.log('bt3 : '+ bt3);
-       
-       
-                        
+                              
     }
     
 }]);
