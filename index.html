@@ -6,21 +6,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
     <script src="jogodavelha.js"></script>
     <link rel="stylesheet" href="jv.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
 </head>
 <body ng-app="jvApp" ng-controller="jvControl">
-    <div>
-        <p>{{player}}</p>
-        
-
-        <button ng-click="mostre($event)" ng-class="b1">{{b1}}</button>
-        <button ng-click="mostre($event)" ng-switch="b2">{{b2}}</button>
-        <button ng-click="mostre($event)" ng-switch="b3">{{b3}}</button><br>
-        <button ng-click="mostre($event)">{{b4}}</button>
-        <button>{{b5}}</button>
-        <button>{{b6}}</button><br>
-        <button>{{b7}}</button>
-        <button>{{b8}}</button>
-        <button>{{b9}}</button>
+    <div class="col-xl" ng-repeat="botao in botoes" >
+        <button ng-click="clicktest($event)" class="btn btn-primary">{{botao.no}}</button>
+    
     </div>
+    <p>{{player}}</p>
 </body>
 </html>

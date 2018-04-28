@@ -1,47 +1,8 @@
-input{
-    align: center;
-    text-align: center;
-    width: 30px;
-    height: 30px;
-    Padding: 15px;
-    margin: 5px;
-    border: 10px solid blue ;
-    border-radius: 53px;
-    background: transparent;
-    color: aliceblue;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 28px;
-}
-p{
-    color: aliceblue;
-
-}
-button{
-    width: 30px;
-    height: 30px;
-}
-/*button{
-    align: center;
-    text-align: center;
-    width: 30px;
-    height: 30px;
-    Padding: 15px;
-    margin: 5px;
-    border: 10px solid blue ;
-    border-radius: 53px;
-    background: transparent;
-    color: aliceblue;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 28px;
-}*/
-
 body{
-    background-image: url(jv.png);
-    background-repeat: no-repeat;
-    
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
 }
-body div {
-    
-    align: center;
-    
+
+button{
+
 }
