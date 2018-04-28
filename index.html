@@ -4,15 +4,27 @@
     <meta charset="UTF-8">
     <title>Jogo da Velha</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
     <script src="jogodavelha.js"></script>
     <link rel="stylesheet" href="jv.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
 </head>
 <body ng-app="jvApp" ng-controller="jvControl">
-    <div class="col-xl" ng-repeat="botao in botoes" >
-        <button ng-click="clicktest($event)" class="btn btn-primary">{{botao.no}}</button>
-    
+    <div class="primeira">    
+        <div class="col-xl" >
+                    <button ng-click="showID($event);clicktest($event)" class="btn btn-primary" id="b1" ng-bind-html="b1b">{{jogador(showID)}}</button>
+                    <button ng-click="showID($event);clicktest($event)" class="btn btn-primary" id="b2" ng-bind-html="b2b">text</button>
+                    <button ng-click="showID($event);clicktest($event)" class="btn btn-primary" id="b3" ng-bind-html="b3b">{{player}}</button><br>
+                    <button ng-click="showID($event);clicktest($event)" class="btn btn-primary" id="b4" ng-bind-html="b4b">{{player}}</button>
+                    <button ng-click="showID($event);clicktest($event)" class="btn btn-primary" id="b5" ng-bind-html="b5b">{{player}}</button>
+                    <button ng-click="showID($event);clicktest($event)" class="btn btn-primary" id="b6" ng-bind-html="b6b">{{player}}</button><br>
+                    <button ng-click="showID($event);clicktest($event)" class="btn btn-primary" id="b7" ng-bind-html="b7b">{{player}}</button>
+                    <button ng-click="showID($event);clicktest($event)" class="btn btn-primary" id="b8" ng-bind-html="b8b">{{player}}</button>
+                    <button ng-click="showID($event);clicktest($event)" class="btn btn-primary" id="b9" ng-bind-html="b9b">{{player}}</button>
+                    
+         </div>
     </div>
-    <p>{{player}}</p>
+
+   
 </body>
 </html>

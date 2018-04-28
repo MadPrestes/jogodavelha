@@ -1,8 +1,18 @@
 body{
-    display: grid;
-    grid-template-columns: 3fr 3fr 3fr;
+
+}
+body div{
+    background: black;
+    width: 500px;
+    height: 500px;
 }
 
-button{
 
+
+.btn-primary{
+    
+    margin-top: 50px;
+    margin-left:45px;
+    width: 90px;
+    height: 90px;
 }
