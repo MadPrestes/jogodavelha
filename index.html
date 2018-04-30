@@ -8,9 +8,11 @@
     <script src="jogodavelha.js"></script>
     <link rel="stylesheet" href="jv.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="images" href="images/">
 </head>
-<body ng-app="jvApp" ng-controller="jvControl">
-    <div class="primeira">    
+<body ng-app="jvApp" ng-controller="jvControl" style="background-color: black ; width: 600px ; height: 600px">
+    <div class="primeira">   
+            <p>teste de local</p> 
         <div class="col-xl" >
                     <button ng-click="showID($event)" ng-mouseleave="clicktest($event)" class="btn btn-primary" id="b1" ng-bind-html="b1b"></button>
                     <button ng-click="showID($event)" ng-mouseleave="clicktest($event)" class="btn btn-primary" id="b2" ng-bind-html="b2b"></button>
@@ -23,6 +25,8 @@
                     <button ng-click="showID($event)" ng-mouseleave="clicktest($event)" class="btn btn-primary" id="b9" ng-bind-html="b9b"></button>
                     
          </div>
+
+         
     </div>
 
    

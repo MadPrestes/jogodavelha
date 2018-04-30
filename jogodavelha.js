@@ -17,7 +17,13 @@ jvapp.controller('jvControl',['$scope', function($scope){
     var bt8 = 8;
     var bt9 = 9;
 
-  
+    var x = new Image();
+    x.src = "x-400.png"
+    
+
+  function reload(){
+    window.location.reload();    
+};
 
     
      $scope.clicktest = function(clickEvent){
@@ -35,20 +41,20 @@ jvapp.controller('jvControl',['$scope', function($scope){
 
 
          //linhas  
-             if(bt1 === bt2 && bt1 === bt3 && bt1 !== null){alert(bt1 + ' ganhou');};
-            if (bt4 == bt5 && bt4 == bt6 && bt4 !== null){alert(bt4 + ' ganhou');};
-            if (bt7 == bt8 && bt7 == bt9 && bt7 !== null){alert(bt7 + ' ganhou');};
+             if(bt1 === bt2 && bt1 === bt3 && bt1 !== null){alert(x + ' ganhou'); reload();};
+            if (bt4 == bt5 && bt4 == bt6 && bt4 !== null){alert(bt4 + ' ganhou'); reload();};
+            if (bt7 == bt8 && bt7 == bt9 && bt7 !== null){alert(bt7 + ' ganhou'); reload();};
             
             
         // contraBarra
-            if (bt1 == bt5 && bt1 == bt9 && bt5 !== null){alert(bt5 + '  ganhou');};
+            if (bt1 == bt5 && bt1 == bt9 && bt5 !== null){alert(bt5 + '  ganhou'); reload();};
             // barra
-            if (bt7 == bt5 && bt7 == bt3 && bt7 !== null){alert(bt3 + '  ganhou');};
+            if (bt7 == bt5 && bt7 == bt3 && bt7 !== null){alert(bt3 + '  ganhou'); reload();};
     
         // colunas
-            if(bt1 == bt4 && bt1 == bt7 && bt1 !== null){alert(bt1 + '  ganhou'); };
-            if(bt2 == bt5 && bt2 == bt8 && bt2 !== null){alert(bt8 + '   ganhou');};
-            if(bt3 == bt6 && bt3 == bt9 && bt3 !== null){alert(bt9 + '   ganhou');};
+            if(bt1 == bt4 && bt1 == bt7 && bt1 !== null){alert(bt1 + '  ganhou'); reload(); };
+            if(bt2 == bt5 && bt2 == bt8 && bt2 !== null){alert(bt8 + '   ganhou'); reload();};
+            if(bt3 == bt6 && bt3 == bt9 && bt3 !== null){alert(bt9 + '   ganhou'); reload();};
     };
 
     

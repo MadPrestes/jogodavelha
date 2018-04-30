@@ -1,8 +1,12 @@
-body{
-
+p{
+    position: static;
+    color: white;
+    margin-left: 40%;
+   
+    
 }
+
 body div{
-    background: black;
     width: 500px;
     height: 500px;
 }
